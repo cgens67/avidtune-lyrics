@@ -4,12 +4,12 @@
 <For:2.000:2.250|the:2.250:2.500|first:2.500:2.750|time:2.750:3.000|in:3.000:3.250|eight:3.250:3.500|years:3.500:3.800>
 [00:04.00]The original Jackson 5
 <The:4.000:4.250|original:4.250:4.600|Jackson:4.600:4.800|5:4.800:5.000>
-[00:05.00]Jackie, Marlon, Tito, Jermaine, and Michael!
-<Jackie,:5.000:5.400|Marlon,:5.400:5.800|Tito,:5.800:6.200|Jermaine,:6.200:6.700|and:6.700:7.000|Michael!:7.000:7.800>
-[00:08.00]The Jackson 5!
-<The:8.000:8.300|Jackson:8.300:8.700|5!:8.700:9.500>
-[00:27.00]Everybody clap your hands, come on!
-<Everybody:27.000:27.500|clap:27.500:27.800|your:27.800:28.000|hands,:28.000:28.500|come:28.500:28.800|on!:28.800:29.500>
+[00:06.00]Jackie, Marlon, Tito, Jermaine, and Michael!
+<Jackie,:6.000:6.500|Marlon,:6.500:7.000|Tito,:7.000:7.500|Jermaine,:7.500:8.000|and:8.000:8.400|Michael!:8.400:9.200>
+[00:10.00]The Jackson 5!
+<The:10.000:10.300|Jackson:10.300:10.700|5!:10.700:11.500>
+[00:28.50]Everybody clap your hands, come on!
+<Everybody:28.500:29.000|clap:29.000:29.300|your:29.300:29.500|hands,:29.500:29.800|come:29.800:30.100|on!:30.100:30.800>
 [00:34.00]When I had you to myself
 <When:34.000:34.300|I:34.300:34.500|had:34.500:34.800|you:34.800:35.000|to:35.000:35.300|myself:35.300:35.900>
 [00:36.00]I didn't want you around
@@ -58,36 +58,28 @@
 <Na,:74.000:74.500|na,:74.500:75.000|na,:75.000:75.500|na:75.500:76.500>
 [01:19.00]Everybody, come on!
 <Everybody,:79.000:79.600|come:79.600:79.900|on!:79.900:80.500>
-[01:27.00]When you stepped into my life, you changed it
-<When:87.000:87.300|you:87.300:87.600|stepped:87.600:87.900|into:87.900:88.200|my:88.200:88.500|life,:88.500:89.000|you:89.000:89.300|changed:89.300:89.600|it:89.600:89.900>
-[01:30.00]From the very start
-<From:90.000:90.200|the:90.200:90.400|very:90.400:90.700|start:90.700:91.500>
-[01:31.00]I changed the focus with just one fast
-<I:91.000:91.200|changed:91.200:91.500|the:91.500:91.700|focus:91.700:92.100|with:92.100:92.300|just:92.300:92.500|one:92.500:92.700|fast:92.700:93.500>
-[01:33.00]From the highest quick
-<From:93.000:93.300|the:93.300:93.600|highest:93.600:94.000|quick:94.000:94.800>
-[01:35.00]We grew up the changes
-<We:95.000:95.300|grew:95.300:95.600|up:95.600:95.900|the:95.900:96.200|changes:96.200:96.900>
-[01:37.00]From the very end
-<From:97.000:97.200|the:97.200:97.400|very:97.400:97.700|end:97.700:98.500>
-[01:39.00]I just like back in history
-<I:99.000:99.200|just:99.200:99.400|like:99.400:99.600|back:99.600:99.800|in:99.800:100.000|history:100.000:100.900>
-[01:41.00]Go on the same old thing
-<Go:101.000:101.300|on:101.300:101.600|the:101.600:101.900|same:101.900:102.200|old:102.200:102.500|thing:102.500:103.000>
+[01:27.00]When we played tag in grade school, you wanted to be it
+<When:87.000:87.200|we:87.200:87.400|played:87.400:87.600|tag:87.600:87.800|in:87.800:88.000|grade:88.000:88.200|school,:88.200:88.600|you:88.600:88.800|wanted:88.800:89.200|to:89.200:89.400|be:89.400:89.600|it:89.600:89.900>
+[01:31.00]But chasing boys was just a fad, you crossed your heart, you'd quit
+<But:91.000:91.200|chasing:91.200:91.500|boys:91.500:91.700|was:91.700:91.900|just:91.900:92.100|a:92.100:92.300|fad,:92.300:92.600|you:92.600:92.800|crossed:92.800:93.000|your:93.000:93.200|heart,:93.200:93.400|you'd:93.400:93.600|quit:93.600:93.900>
+[01:35.00]When we grew up, you traded your promise for my ring
+<When:95.000:95.200|we:95.200:95.400|grew:95.400:95.600|up,:95.600:95.800|you:95.800:96.000|traded:96.000:96.300|your:96.300:96.500|promise:96.500:96.800|for:96.800:97.000|my:97.000:97.200|ring:97.200:97.500>
+[01:39.00]Now just like back to grade school, you're doing the same old thing
+<Now:99.000:99.200|just:99.200:99.400|like:99.400:99.600|back:99.600:99.800|to:99.800:100.000|grade:100.000:100.200|school,:100.200:100.500|you're:100.500:100.700|doing:100.700:101.000|the:101.000:101.200|same:101.200:101.500|old:101.500:101.800|thing:101.800:102.500>
 [01:43.00]Stop! The love you save may be your own
 <Stop!:103.000:103.500|The:103.500:103.800|love:103.800:104.100|you:104.100:104.400|save:104.400:104.700|may:104.700:105.000|be:105.000:105.300|your:105.300:105.600|own:105.600:106.500>
-[01:46.00]Darlin', take it slow
-<Darlin',:106.000:106.500|take:106.500:106.800|it:106.800:107.100|slow:107.100:107.900>
-[01:48.00]Or some day you'll be all alone
-<Or:108.000:108.300|some:108.300:108.600|day:108.600:108.900|you'll:108.900:109.200|be:109.200:109.500|all:109.500:109.800|alone:109.800:110.800>
+[01:46.50]Darlin', take it slow
+<Darlin',:106.500:107.000|take:107.000:107.300|it:107.300:107.600|slow:107.600:108.500>
+[01:48.50]Or some day you'll be all alone
+<Or:108.500:108.800|some:108.800:109.100|day:109.100:109.400|you'll:109.400:109.700|be:109.700:110.000|all:110.000:110.300|alone:110.300:111.000>
 [01:51.00]Stop! The love you save may be your own
 <Stop!:111.000:111.500|The:111.500:111.800|love:111.800:112.100|you:112.100:112.400|save:112.400:112.700|may:112.700:113.000|be:113.000:113.300|your:113.300:113.600|own:113.600:114.500>
-[01:54.00]Darlin', look both ways before you cross me
-<Darlin',:114.000:114.500|look:114.500:114.800|both:114.800:115.100|ways:115.100:115.500|before:115.500:115.900|you:115.900:116.200|cross:116.200:116.500|me:116.500:117.500>
+[01:54.50]Darlin', look both ways before you cross me
+<Darlin',:114.500:115.000|look:115.000:115.300|both:115.300:115.600|ways:115.600:116.000|before:116.000:116.400|you:116.400:116.700|cross:116.700:117.000|me:117.000:118.000>
 [01:58.00]You're headed for the danger zone
 <You're:118.000:118.300|headed:118.300:118.800|for:118.800:119.100|the:119.100:119.400|danger:119.400:119.900|zone:119.900:121.000>
-[02:03.00]Ready!
-<Ready!:123.000:124.000>
+[02:03.00]Randy!
+<Randy!:123.000:124.000>
 [02:44.00]Do you remember these songs?
 <Do:164.000:164.300|you:164.300:164.600|remember:164.600:165.200|these:165.200:165.500|songs?:165.500:166.500>
 [02:48.00]I never can say goodbye
