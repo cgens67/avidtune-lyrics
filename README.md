@@ -1,20 +1,22 @@
 # AvidLyrics
 
-AvidLyrics is the official custom lyrics repository for **AvidTune**. It serves as a decentralized, fast, and free database of synchronized `.lrc` files mapped to specific tracks using their unique Song IDs.
+AvidLyrics is the official custom lyrics repository for **AvidTune**. It serves as a fast and free database of synchronized `.lrc` files mapped to specific tracks using their unique Song IDs or formatted Song Titles.
 
-To deliver these lyrics efficiently and prevent API rate limits, AvidTune fetches files from this repository using the [jsDelivr CDN](https://www.jsdelivr.com/).
+To ensure that newly added or edited lyrics are available instantly to users, AvidTune fetches these files directly from GitHub Raw, intelligently bypassing cache delays.
 
 ---
 
 ## 📂 Repository Structure
 
-The repository is structured dynamically to ensure fast queries:
+The repository is structured into two main directories to allow flexible querying:
 
 ```text
 avidtune-lyrics/
 ├── lyrics/
-│   ├── dQw4w9WgXcQ.lrc      <-- Named using unique Song/Video IDs
-│   └── [Another_ID].lrc
+│   ├── dQw4w9WgXcQ.lrc      <-- Named using exact YouTube Video IDs
+│   └── sorted/
+│       ├── billie_jean.lrc  <-- Fallbacks named using formatted song titles
+│       └── yourockmyworld.lrc
 └── README.md
 ```
 
@@ -22,13 +24,18 @@ avidtune-lyrics/
 
 ## 🚀 How It Works in AvidTune
 
-When a song plays, AvidTune queries this repository via CDN using the unique identifier (`id`) of the active track:
+When a song plays, AvidTune queries this repository directly from GitHub Raw. To ensure maximum compatibility, it attempts to find the lyrics in a specific priority order:
 
+1. **Exact Video ID**: `lyrics/pAyKJAtD5O4.lrc`
+2. **Cleaned Title (Underscores)**: `lyrics/sorted/you_are_not_alone.lrc` *(Parentheses like "(Official Video)" are stripped)*
+3. **Cleaned Title (No Spaces)**: `lyrics/sorted/youarenotalone.lrc`
+4. **Raw Exact Title**: `lyrics/sorted/You_Are_Not_Alone_(Official_Video).lrc`
+
+The URL requested looks like this:
 ```text
-https://cdn.jsdelivr.net/gh/cgens67/avidtune-lyrics@main/lyrics/{id}.lrc
+https://raw.githubusercontent.com/cgens67/avidtune-lyrics/main/[PATH]?t=[TIMESTAMP]
 ```
-
-If a matching file is found, it is parsed instantly and synchronized with the music player UI.
+It stops and loads the lyrics as soon as one of the paths returns a successful match.
 
 ---
 
@@ -36,10 +43,12 @@ If a matching file is found, it is parsed instantly and synchronized with the mu
 
 If you want to add new synchronized lyrics or correct existing ones:
 
-1. **Find the Song ID**: Identify the unique ID of the track inside AvidTune (usually the YouTube Video ID from the track URL).
+1. **Identify the Song**: Find the exact Video ID or the Song Title.
 2. **Create the Lyric File**: Create a text file containing the synchronized lines.
 3. **Format the File**: Ensure standard LRC timestamp formats are used (details below).
-4. **Save the File**: Save the file in the `lyrics/` directory and name it exactly `{Song_ID}.lrc` (for example, `lyrics/dQw4w9WgXcQ.lrc`).
+4. **Save the File**: 
+   - If using the **Video ID**: Save it in the `lyrics/` directory (e.g., `lyrics/dQw4w9WgXcQ.lrc`).
+   - If using the **Song Title**: Save it in the `lyrics/sorted/` directory (e.g., `lyrics/sorted/never_gonna_give_you_up.lrc`).
 5. **Commit & Push**: Submit a pull request or push your changes to the `main` branch.
 
 ---
@@ -77,9 +86,7 @@ To format background vocals or overlapping voices differently (e.g., italics, lo
 
 ## ⚡ Technical Details & Caching
 
-Because lyrics are served via jsDelivr, there can be a brief delay (up to 24 hours) for CDN caches to update globally after a file is modified on GitHub. 
+**No More Caching Delays!** 
+Previously, AvidLyrics used a CDN which caused up to 12 hours of caching delay for edits. AvidTune now queries GitHub Raw directly and appends a dynamic timestamp (`?t=[CURRENT_TIME_MS]`) to every request. 
 
-To force-clear the cache for a specific file during testing, you can access the jsDelivr purge API:
-```text
-https://purge.jsdelivr.net/gh/cgens67/avidtune-lyrics@main/lyrics/{id}.lrc
-```
+This completely bypasses GitHub's 5-minute cache, meaning any committed `.lrc` file will be **instantly available** in the AvidTune app the moment the repository is updated.
